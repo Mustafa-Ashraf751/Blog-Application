@@ -16,7 +16,7 @@ import org.hibernate.annotations.NaturalId;
 @Entity
 @Data
 @NoArgsConstructor
-@Table
+@Table(name = "comments")
 public class Comment extends UserDataAudit {
 
   @Id
