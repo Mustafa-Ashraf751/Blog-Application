@@ -33,7 +33,7 @@ public class Address extends UserDataAudit {
   @Pattern(regexp = "\\d{5}",message = "zipcode must be 5 digits number")
   private String zipCode;
 
-  @OneToOne
+  @OneToOne(cascade = CascadeType.ALL)
   @JoinColumn(name = "geo_id")
   private Geo geo;
 
