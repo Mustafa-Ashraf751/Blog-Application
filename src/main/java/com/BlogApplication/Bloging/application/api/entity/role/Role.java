@@ -15,7 +15,7 @@ public class Role {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Enumerated
+  @Enumerated(EnumType.STRING)
   @NaturalId
   private RoleName name;
 
