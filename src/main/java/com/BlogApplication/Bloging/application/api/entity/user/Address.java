@@ -40,12 +40,12 @@ public class Address extends UserDataAudit {
   @OneToOne(mappedBy = "address")
   private User user;
 
-  public Address(String city, String street, String suite, String zipCode, Geo geo) {
+  public Address(String city, String street,
+                 String suite, String zipCode) {
     this.city = city;
     this.street = street;
     this.suite = suite;
     this.zipCode = zipCode;
-    this.geo = geo;
   }
 
 
